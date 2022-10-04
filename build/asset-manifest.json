@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.55ad48f9.css",
-    "main.js": "/static/js/main.a12dab3a.js",
+    "main.js": "/static/js/main.918991d0.js",
     "static/media/joker.jpg": "/static/media/joker.10f08c4127cd0bf709dc.jpg",
     "static/media/Logo.svg": "/static/media/Logo.4796f2a5bc972e69656dd0755a275ee6.svg",
     "static/media/batman.jpg": "/static/media/batman.2d99a13ae85a5bd57f94.jpg",
@@ -10,10 +10,10 @@
     "index.html": "/index.html",
     "static/media/Facebook.svg": "/static/media/Facebook.db4db127dfe86c479d86eed0444994e7.svg",
     "main.55ad48f9.css.map": "/static/css/main.55ad48f9.css.map",
-    "main.a12dab3a.js.map": "/static/js/main.a12dab3a.js.map"
+    "main.918991d0.js.map": "/static/js/main.918991d0.js.map"
   },
   "entrypoints": [
     "static/css/main.55ad48f9.css",
-    "static/js/main.a12dab3a.js"
+    "static/js/main.918991d0.js"
   ]
 }
