@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55ad48f9.css",
+    "main.js": "/static/js/main.a12dab3a.js",
+    "static/media/joker.jpg": "/static/media/joker.10f08c4127cd0bf709dc.jpg",
+    "static/media/Logo.svg": "/static/media/Logo.4796f2a5bc972e69656dd0755a275ee6.svg",
+    "static/media/batman.jpg": "/static/media/batman.2d99a13ae85a5bd57f94.jpg",
+    "static/media/Vk.svg": "/static/media/Vk.1ff7bdc407ffe7dc89122717f4a57be9.svg",
+    "static/media/Insta.svg": "/static/media/Insta.59b7db33ce516d7ff8ba36020644a7dc.svg",
+    "index.html": "/index.html",
+    "static/media/Facebook.svg": "/static/media/Facebook.db4db127dfe86c479d86eed0444994e7.svg",
+    "main.55ad48f9.css.map": "/static/css/main.55ad48f9.css.map",
+    "main.a12dab3a.js.map": "/static/js/main.a12dab3a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55ad48f9.css",
+    "static/js/main.a12dab3a.js"
+  ]
+}
