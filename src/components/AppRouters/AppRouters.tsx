@@ -1,9 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { MainPage } from "../../Pages/MainPages";
 import { LoginPage } from "../../Pages/LoginPage";
-
 import { AppRoute } from "../Enums/roter";
-import { Header } from "../Header/Header";
 import { RegistrationPage } from "../../Pages/RegistrationPage";
 import { ResetPasswor } from "../../Pages/ResetPasswordPage";
 import { ActivationAccount } from "../../Pages/ActivationPage";
@@ -11,6 +8,7 @@ import { MainLayout } from "../../layouts/MainLayouts";
 import { PostCardPage } from "../../Pages/PostCadPages/PostCardPages";
 import { ConfedentialPage } from "../../Pages/ConfedentialPage/ConfedentialPage";
 import { DetailsPost } from "../PostDetails/detailsPost";
+import { FavouriteMoviesPage } from "../../Pages/FavoritesPage";
 export const AppRouter = () => {
   return (
     <Routes>
@@ -20,6 +18,10 @@ export const AppRouter = () => {
         <Route
           path={AppRoute.Confedential}
           element={<ConfedentialPage />}
+        ></Route>
+        <Route
+          path={AppRoute.Favorites}
+          element={<FavouriteMoviesPage />}
         ></Route>
       </Route>
       <Route path={AppRoute.Login} element={<LoginPage />}></Route>

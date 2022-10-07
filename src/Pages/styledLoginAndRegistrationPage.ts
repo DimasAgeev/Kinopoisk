@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 export const LoginWrapper = styled.div`
   display: flex;
   width: 100%;
-  justify-content: end;
+  justify-content: center;
   font-size: 2rem;
   color: white;
 `;

@@ -12,11 +12,12 @@ export interface DetailsPostType {
   Poster: string;
   Production: string;
   Rated: string;
-
+  Ratings: Array<{ Source: string; Value: string }>;
   Released: string;
   Response: string;
   Runtime: string;
   Title: string;
+  Type: "movie" | "series" | "episode";
   Website: string;
   Writer: string;
   Year: string;

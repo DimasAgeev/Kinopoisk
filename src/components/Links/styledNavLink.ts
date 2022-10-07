@@ -6,7 +6,7 @@ export const NavLinkstyled = styled(NavLink)`
   color: white;
   text-decoration: none;
   position: relative;
-  :active {
+  &.active {
     color: red;
   }
   :hover {

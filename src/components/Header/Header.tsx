@@ -1,5 +1,4 @@
 import { InputSearch } from "../Input/searchInput";
-import { HederLink } from "../Links/Link";
 import { HederNavLink } from "../Links/NavLinks";
 import Logo from "../Images/Logo.svg";
 import {
@@ -10,26 +9,45 @@ import {
   HeaderUserWrapper,
   HeaderWrapper,
 } from "./styledHeader";
+import { useEffect, useState } from "react";
+import { useAppDispatch } from "../../Redux/store";
+import { searchAction } from "../../Redux/Search/search.slice";
 export const Header = () => {
+  const dispatch = useAppDispatch();
+  const [inputText, setInputText] = useState("");
+
+  useEffect(() => {
+    const idTimer = setTimeout(
+      () => dispatch(searchAction.setMovieName(inputText || "day")),
+      1000
+    );
+    return () => {
+      clearTimeout(idTimer);
+    };
+  }, [inputText]);
+
   return (
     <HeaderWrapper>
       <HeaderContainer>
         <HeaderLogoWrapper>
-          <HederLink title="" to={"/"}>
+          <HederNavLink title="" to={"/"}>
             <img src={Logo} alt="Logo" />
-          </HederLink>
+          </HederNavLink>
         </HeaderLogoWrapper>
         <HeaderNavLinkWrapper>
           <HederNavLink title="Home" to={"/"}></HederNavLink>
+          <HederNavLink title="Favorites" to={"/favorites"}></HederNavLink>
           <HederNavLink title="Sign In" to={"/sign_in"}></HederNavLink>
           <HederNavLink title="Sign Up" to={"/sign_up"}></HederNavLink>
-          {/* <HederNavLink
-            title="Favorites"
-            to={"/activate/:uid/:token"}
-          ></HederNavLink> */}
         </HeaderNavLinkWrapper>
         <HeaderSearchWrapper>
-          <InputSearch label="" type="text" placeholder="Поиск по сайту" />
+          <InputSearch
+            label=""
+            value={inputText}
+            type="text"
+            placeholder="Поиск"
+            onChange={(e) => setInputText(e.target.value)}
+          />
         </HeaderSearchWrapper>
         <HeaderUserWrapper></HeaderUserWrapper>
       </HeaderContainer>

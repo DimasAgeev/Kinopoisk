@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Btn } from "../Button/Btn";
 export const DetailsPostContainer = styled.div`
   display: flex;
   max-width: 100%;
@@ -13,6 +14,7 @@ export const DetailsPostImageContainer = styled.div`
   width: 26.75rem;
   margin-bottom: 4rem;
 `;
+
 export const DetailsPostImage = styled.img`
   max-height: 41.625rem;
   width: 100%;
@@ -21,11 +23,15 @@ export const DetailsPostImage = styled.img`
   object-fit: cover;
   position: relative;
 `;
+export const BtnFavorite = styled(Btn)<{ isFavorite: boolean }>`
+  background-color: ${(props) => (props.isFavorite ? "green" : "red")};
+`;
+
 export const DetailsPostContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  max-width: 45%;
+  flex: 1;
 `;
 export const TitleWrapper = styled.div`
   display: flex;
@@ -41,7 +47,7 @@ export const InfoWrapper = styled.div`
   border: solid 0.2px;
   border-color: grey;
   border-radius: 5px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0.5rem;
   margin-bottom: 1rem;
 `;

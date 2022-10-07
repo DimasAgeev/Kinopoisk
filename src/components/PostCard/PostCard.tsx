@@ -1,4 +1,3 @@
-import { PostType } from "./types";
 import {
   PostContentContainer,
   PostImage,

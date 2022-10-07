@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 export const InputSearchWrapper = styled.div`
   display: flex;
-  min-width: 100%;
+  flex: 1;
 
   color: white;
   position: relative;

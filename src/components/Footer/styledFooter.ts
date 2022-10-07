@@ -99,6 +99,7 @@ export const FooterAboutAs = styled.div`
 `;
 export const FooterProtection = styled.div`
   align-items: center;
+  padding-right: 1rem;
 `;
 export const FooterMedia = styled.div`
   display: flex;
@@ -112,4 +113,5 @@ export const FooterMedia = styled.div`
 export const FooterСonfidential = styled.div`
   display: flex;
   align-items: center;
+  padding-left: 1rem;
 `;

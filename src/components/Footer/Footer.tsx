@@ -30,10 +30,6 @@ export const Footer = () => {
           <FooterMenu>
             <HederNavLink title="Home" to={"/"}></HederNavLink>
             <HederNavLink title="Sign In" to={"/sign_in"}></HederNavLink>
-            {/* <HederNavLink
-              title="Activation"
-              to={"/activate/:uid/:token"}
-            ></HederNavLink> */}
             <HederNavLink title="Sign Up" to={"sign_up"}></HederNavLink>
           </FooterMenu>
           <FooterAboutAs>

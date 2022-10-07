@@ -14,7 +14,7 @@ export const PostContentContainer = styled.div`
   width: 14rem;
 `;
 export const PostImage = styled.img`
-  max-height: 23.8125rem;
+  height: 21.8125rem;
   width: 100%;
   margin: auto;
   border-radius: 0.5rem;
