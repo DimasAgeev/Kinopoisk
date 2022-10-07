@@ -57,7 +57,7 @@ export function DetailsPost() {
         <DetailsPostImage src={movie?.Poster} />
         <BtnFavorite
           isFavorite={isFavorite}
-          title="Add to favorites"
+          title="Add/Delete to favorites"
           onClick={() => {
             isFavorite
               ? dispatch(favoritesAction.removeFromFavorites(movieId))

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 export const PostsContainer = styled.div`
   display: flex;
   max-width: 100%;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;

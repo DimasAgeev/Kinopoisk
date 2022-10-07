@@ -29,6 +29,7 @@ export const Footer = () => {
           </FooterLogo>
           <FooterMenu>
             <HederNavLink title="Home" to={"/"}></HederNavLink>
+            <HederNavLink title="Favorites" to={"/favorites"}></HederNavLink>
             <HederNavLink title="Sign In" to={"/sign_in"}></HederNavLink>
             <HederNavLink title="Sign Up" to={"sign_up"}></HederNavLink>
           </FooterMenu>
